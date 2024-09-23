@@ -24,6 +24,9 @@ int main() {
     scanf(" %d", &ptur);
     printf("Digite a área da cidade em km²: \n");
     scanf(" %f", &area);
+    // Cálculo das propriedades extras:
+    float capita = PIB*1000000000/populacao;
+    float densidade = populacao/area;
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
@@ -32,6 +35,8 @@ int main() {
     printf("  População - %d habitantes\n", populacao);
     printf("  PIB - %.2f bilhões\n", PIB);
     printf("  Área - %.2f km²\n", area);
+    printf("  PIB per capita - %.2f \n", capita);
+    printf("  Densidade Populacional - %.2f hab/km²\n", densidade);
     printf("  Pontos Turísticos - %d\n\n", ptur);
 
     return 0;
